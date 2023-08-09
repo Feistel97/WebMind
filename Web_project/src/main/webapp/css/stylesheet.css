@@ -1,0 +1,76 @@
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+    overflow: hidden;
+} 
+@font-face{ 
+	font-family:"My Font"; 
+	src: url("../Fonts/HSSanTokki-Regular.ttf")} 
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+nav{
+    background-color: #181b1f; 
+    display:flex;
+    margin:0 auto;
+    font-family: "My Font";
+}
+
+#title{
+    width:40%;
+    padding: 25px;
+    font-size:20px;
+    color:#FFFFFF;
+}
+
+#title a{
+    text-align:center;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+#menu{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+    padding: left 20px;
+    font-family: Pretendard;
+    font-size : 20px;
+    list-style-type:none;
+    overflow: hidden;
+}
+
+#menu li{
+    padding-top:25px;
+    padding-bottom:25px;
+    padding-left: 50px;
+    padding-right:50px;
+    cursor:pointer;
+}
+
+#menu li a{
+    text-align:center;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: "My Font";
+}
+
+#nickName{
+    width:300px;
+    height:50px;
+    font-size:20px;
+    text-align: center;
+}
+
+#subTitle{
+    padding: 15px;
+}
+
+form{
+    padding-left: 15%;
+    padding-right: 15%;
+}

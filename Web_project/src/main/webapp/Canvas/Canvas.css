@@ -1,0 +1,61 @@
+@charset "EUC-KR";
+@import "reset.css";
+
+body {
+    background-color: #eeeeee;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;   /*디스플레이 화면을 유동적(반응형)으로 해주는 flex*/
+    flex-direction: column;  /*생성될 아이템 정렬 방향*/
+    align-items: center;  /*가운데 정렬하겠다*/
+    padding-top: 50px;  /*엘리먼트의 상단 여백을 지정*/
+}
+
+.canvas{
+    width: 700px ;
+    height: 600px ;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.068);
+}
+
+.controls {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.controls .controls__colors {
+    display: flex;
+}
+
+.controls__colors .controls__color {
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.068);
+    border-radius: 25px;
+    cursor: url('me.cur'), pointer;
+}
+
+.controls .controls__btns{ /*버튼 위치 조정*/
+	margin-bottom: 20px;
+}
+
+.controls__btns button{ 
+    all: unset; /* 버튼 스타일 초기화 (웹브라우저마다 설정된걸 해제) */
+    cursor: pointer; /* 커서 모양 바꾸기(1편에 마지막부분에 상세설명있음) */
+    background-color: white; /* 배경색 */
+    padding: 5px 0px; /* 영역 설정 */
+    width: 80px; /* 말해 뭐해~ 너비 설정 */
+    text-align: center; /* 가운데 정렬 하거라 */
+    border-radius: 8px; /* 8px만큼 가장자리 둥글게 하거라 */
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.068); /* 그림자 */
+    border: 2px solid rgba(0, 0, 0, 0.2); /* 테두리 */
+    color:rgba(0, 0, 0, 0.8); /* 색상 */
+    text-transform: uppercase; /* 대문자 */
+    font-weight: 600; /* 폰트 굵기 */
+    font-size: 12px; /* 폰트사이즈 */
+}
+.controls__btns button:active { /*버튼 액티브 액션*/
+    transform: scale(0.98);
+}
